@@ -32,6 +32,22 @@ public class BuildGraphFromInput {
 
         Map<String, List<String>> graph = new HashMap<>();
 
+        for (Map.Entry<String, List<String>> entry : userResources.entrySet()) {
 
+            String user = entry.getKey();
+            List<String> resources = entry.getValue();
+
+            for (String resource : resources) {
+
+                /*
+                 * User -> Resource edge
+                 */
+                graph
+                        .computeIfAbsent(user,
+                                k -> new ArrayList<>())
+                        .add(resource);
+
+            }
+        }
     }
 }
