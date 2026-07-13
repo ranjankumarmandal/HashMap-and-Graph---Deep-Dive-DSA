@@ -28,5 +28,8 @@ public class BuildGraphFromInput {
         printGraph(graph);
     }
 
+    private static Map<String, List<String>> buildGraph(
+            Map<String, List<String>> userResources) {
+
     }
 }
