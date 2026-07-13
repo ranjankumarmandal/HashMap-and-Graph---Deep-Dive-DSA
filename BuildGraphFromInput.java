@@ -28,8 +28,10 @@ public class BuildGraphFromInput {
         printGraph(graph);
     }
 
-    private static Map<String, List<String>> buildGraph(
-            Map<String, List<String>> userResources) {
+    private static Map<String, List<String>> buildGraph(Map<String, List<String>> userResources) {
+
+        Map<String, List<String>> graph = new HashMap<>();
+
 
     }
 }
