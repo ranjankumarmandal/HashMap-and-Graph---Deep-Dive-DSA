@@ -61,6 +61,9 @@ public class BuildGraphFromInput {
     }
 
     private static void printGraph(
+            Map<String, List<String>> graph) {
+
+        System.out.println("Adjacency List Representation:\n");
 
     }
 }
