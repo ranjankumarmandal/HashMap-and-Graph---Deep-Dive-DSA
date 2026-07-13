@@ -22,5 +22,11 @@ public class BuildGraphFromInput {
          */
         Map<String, List<String>> graph = buildGraph(userResources);
 
+        /*
+         * Print graph
+         */
+        printGraph(graph);
+    }
+
     }
 }
