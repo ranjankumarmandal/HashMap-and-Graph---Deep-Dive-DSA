@@ -56,5 +56,7 @@ public class BuildGraphFromInput {
                         .add(user);
             }
         }
+
+        return graph;
     }
 }
