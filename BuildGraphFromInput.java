@@ -17,5 +17,10 @@ public class BuildGraphFromInput {
         userResources.put("u4", Arrays.asList("ip2"));
         userResources.put("u5", Arrays.asList("ip2", "domain2"));
 
+        /*
+         * Build graph
+         */
+        Map<String, List<String>> graph = buildGraph(userResources);
+
     }
 }
