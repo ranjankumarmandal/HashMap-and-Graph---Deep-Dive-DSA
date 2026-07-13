@@ -47,6 +47,13 @@ public class BuildGraphFromInput {
                                 k -> new ArrayList<>())
                         .add(resource);
 
+                /*
+                 * Resource -> User edge
+                 */
+                graph
+                        .computeIfAbsent(resource,
+                                k -> new ArrayList<>())
+                        .add(user);
             }
         }
     }
