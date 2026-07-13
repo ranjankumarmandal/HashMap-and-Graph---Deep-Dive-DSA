@@ -65,5 +65,13 @@ public class BuildGraphFromInput {
 
         System.out.println("Adjacency List Representation:\n");
 
+        for (Map.Entry<String, List<String>> entry : graph.entrySet()) {
+
+            System.out.printf(
+                    "%-8s -> %s%n",
+                    entry.getKey(),
+                    entry.getValue()
+            );
+        }
     }
 }
