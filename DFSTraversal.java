@@ -18,6 +18,7 @@ public class Session2ConnectedComponents {
 
         userResources.put("u6", Arrays.asList("ip3"));
         userResources.put("u7", Arrays.asList("ip3", "domain3"));
+        userResources.put("u8", Arrays.asList("domain3"));
 
     }
 }
