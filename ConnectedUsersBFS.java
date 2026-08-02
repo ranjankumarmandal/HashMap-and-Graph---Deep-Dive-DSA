@@ -38,5 +38,7 @@ public class ConnectedUsersBFS {
                 graph.computeIfAbsent(resource, k -> new ArrayList<>()).add(user);
             }
         }
+
+        return graph;
     }
 }
