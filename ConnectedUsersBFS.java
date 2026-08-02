@@ -67,5 +67,7 @@ public class ConnectedUsersBFS {
                 }
             }
         }
+
+        return connectedUsers;
     }
 }
