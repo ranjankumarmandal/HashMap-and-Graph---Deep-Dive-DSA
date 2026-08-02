@@ -25,6 +25,7 @@ public class ConnectedUsersBFS {
 
     private static Map<String, List<String>> buildGraph(Map<String, List<String>> userResources) {
 
+        Map<String, List<String>> graph = new HashMap<>();
 
     }
 }
