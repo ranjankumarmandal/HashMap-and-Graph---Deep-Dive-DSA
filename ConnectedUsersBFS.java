@@ -17,5 +17,9 @@ public class ConnectedUsersBFS {
         printGraph(graph);
 
         System.out.println();
+
+        Set<String> connectedUsers = findConnectedUsers(graph, "u1");
+
+        System.out.println("Connected users: " + connectedUsers);
     }
 }
