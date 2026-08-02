@@ -27,5 +27,16 @@ public class ConnectedUsersBFS {
 
         Map<String, List<String>> graph = new HashMap<>();
 
+        for (Map.Entry<String, List<String>> entry : userResources.entrySet()) {
+
+            String user = entry.getKey();
+            List<String> resources = entry.getValue();
+
+            for (String resource : resources) {
+
+                graph.computeIfAbsent(user, k -> new ArrayList<>()).add(resource);
+                graph.computeIfAbsent(resource, k -> new ArrayList<>()).add(user);
+            }
+        }
     }
 }
