@@ -59,5 +59,13 @@ public class ConnectedUsersBFS {
                 connectedUsers.add(current);
             }
 
+            for (String neighbor : graph.getOrDefault(current, Collections.emptyList())) {
+
+                if (!visited.contains(neighbor)) {
+                    visited.add(neighbor);
+                    queue.offer(neighbor);
+                }
+            }
+        }
     }
 }
