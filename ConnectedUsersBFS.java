@@ -48,5 +48,8 @@ public class ConnectedUsersBFS {
         Queue<String> queue = new LinkedList<>();
         Set<String> connectedUsers = new HashSet<>();
 
+        queue.offer(startUser);
+        visited.add(startUser);
+
     }
 }
