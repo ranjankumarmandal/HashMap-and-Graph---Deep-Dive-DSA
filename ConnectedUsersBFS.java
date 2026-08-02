@@ -73,6 +73,10 @@ public class ConnectedUsersBFS {
 
     private static void printGraph(Map<String, List<String>> graph) {
 
+        System.out.println("Adjacency List:");
 
+        for (Map.Entry<String, List<String>> entry : graph.entrySet()) {
+            System.out.printf("%-8s -> %s%n", entry.getKey(), entry.getValue());
+        }
     }
 }
