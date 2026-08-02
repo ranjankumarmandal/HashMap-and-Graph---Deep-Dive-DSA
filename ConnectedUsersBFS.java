@@ -44,6 +44,9 @@ public class ConnectedUsersBFS {
 
     private static Set<String> findConnectedUsers(Map<String, List<String>> graph, String startUser) {
 
+        Set<String> visited = new HashSet<>();
+        Queue<String> queue = new LinkedList<>();
+        Set<String> connectedUsers = new HashSet<>();
 
     }
 }
