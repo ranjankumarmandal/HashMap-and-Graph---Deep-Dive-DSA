@@ -51,5 +51,13 @@ public class ConnectedUsersBFS {
         queue.offer(startUser);
         visited.add(startUser);
 
+        while (!queue.isEmpty()) {
+
+            String current = queue.poll();
+
+            if (current.startsWith("u")) {
+                connectedUsers.add(current);
+            }
+
     }
 }
