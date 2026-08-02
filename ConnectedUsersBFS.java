@@ -4,5 +4,10 @@ public class ConnectedUsersBFS {
 
     public static void main(String[] args) {
 
+        Map<String, List<String>> userResources = new HashMap<>();
+
+        userResources.put("u1", Arrays.asList("ip1", "domain1"));
+        userResources.put("u2", Arrays.asList("ip1"));
+        userResources.put("u3", Arrays.asList("domain1"));
     }
 }
