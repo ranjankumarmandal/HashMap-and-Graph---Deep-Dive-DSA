@@ -22,4 +22,9 @@ public class ConnectedUsersBFS {
 
         System.out.println("Connected users: " + connectedUsers);
     }
+
+    private static Map<String, List<String>> buildGraph(Map<String, List<String>> userResources) {
+
+
+    }
 }
